@@ -4,7 +4,7 @@ resources:
 - self-provisioners.yaml
 secretGenerator:
 - name: htpasswd
-  namespace: openshift-config
+  namespace: deploy-jenkins
   files:
   - htpasswd=htpasswd-secret-data
 generatorOptions:
